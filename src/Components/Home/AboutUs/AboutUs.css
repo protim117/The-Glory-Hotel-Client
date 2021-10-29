@@ -1,0 +1,9 @@
+.about-us{
+    background-color: rgb(247, 240, 233);
+}
+.about-us-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

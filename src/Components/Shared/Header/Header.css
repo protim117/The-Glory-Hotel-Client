@@ -1,0 +1,17 @@
+.nav-section a button,.signIn-btn{
+    padding: 10px;
+    transition: all .8s;
+    color: rgb(61, 60, 60);
+    border-radius: 10px;
+  
+}
+.nav-section button:hover,.signIn-btn:hover{
+    background-color: rgb(132, 132, 184);
+    color: whitesmoke;
+    
+}
+.selected{
+    background-color: rgb(100, 100, 206);
+    color: white!important;
+    border-radius: 10px ;
+}
