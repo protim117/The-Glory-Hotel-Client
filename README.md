@@ -1,71 +1,23 @@
-# Getting Started with Create React App
+# The Glory Hotel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created for [The Glory Hotel](https://the-glory-hotel.web.app/).
 
-## Available Scripts
+## Short Description
 
-In the project directory, you can run:
+In the project it's basically a website vacation hotel & cottage. With different type of color tune, I think this website is one of the thing you will love.
 
-### `yarn start`
+### Available features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The Header contain only login button if you haven't logged in. After login, it will show user name, his booking, all the booking & also can add a booking plan. User have to login to see those button and enter there.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- The Plan section of home page contains all the plan offered by Hotel Authority. There is a button for Booking. After clicking there if the user hasn't logged in. It will take to login page. after login the user have to Provide Address & City in order to Place Booking. 
 
-### `yarn test`
+- Then there is additionally two extra section about hotel & it's facility.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- In My Order route the user can see only his booking placed by him. The user can delete the booking if he wants to because there is a button called delete. But the user have to confirm in order to delete that booking.
 
-### `yarn build`
+- In Manage All Order route the user can see all booking placed by every user. The user can delete the booking if he wants to because there is a button called delete. But the user have to confirm in order to delete that booking. There is a button for admin to update status of Booking (Pending-> Approved) because when someone place a booking the initial status for that booking is set to be "Pending".
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- In Add Booking Route user can add a plan for that hotel. After diving details information the plan user provided will be added in the home page's Plan Section.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# tourism-or-delivery-website-client-side-protim117
+- After clicking Logout user will be redirected to Home Page.
