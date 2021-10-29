@@ -28,7 +28,7 @@ const Header = () => {
                     <Navbar.Collapse className="justify-content-end">
                     {/* If the user is logged in then some button will show up  */}
                     { !user.email?
-                        <NavLink to='/login' activeClassName="selected" className='fw-bold'><button className='btn signIn-btn fw-bold'>SignIn</button></NavLink>
+                        <NavLink to='/login' activeClassName="selected" className='fw-bold signIn-btn'><button className='btn  fw-bold'>SignIn</button></NavLink>
                         : <Nav className='nav-section'>
                             <Navbar.Text className='px-3 mt-1 text-dark fw-bold'>
                             Signed in as: {user.displayName}
