@@ -21,3 +21,5 @@ In the project it's basically a website vacation hotel & cottage. With different
 - In Add Booking Route user can add a plan for that hotel. After diving details information the plan user provided will be added in the home page's Plan Section.
 
 - After clicking Logout user will be redirected to Home Page.
+
+- This website's API(backends) is generated from Heroku and deployed to Firebase. MongoDb is being used to store & use the data.

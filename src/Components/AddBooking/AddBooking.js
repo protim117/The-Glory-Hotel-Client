@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 const AddBooking = () => {
     const { register, handleSubmit,reset, formState: { errors } } = useForm();
     const onSubmit=data=>{
+        // Adding a new booking 
         const uri=`https://serene-tor-03532.herokuapp.com/plans`;
         axios.post(uri,data)
         .then(res=> {

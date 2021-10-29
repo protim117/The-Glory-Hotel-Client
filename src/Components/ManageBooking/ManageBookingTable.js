@@ -4,6 +4,7 @@ const ManageBookingTable = (props) => {
   
     const{booking,handleDelete,handleStatus}=props;
     const {_id,name,productId,status}=booking;
+    // for making the approve button disable after one click
     const [double, setDouble] = useState(false);
     
     return (

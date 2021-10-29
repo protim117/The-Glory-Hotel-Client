@@ -2,6 +2,7 @@ import React from 'react';
 import './Facilities.css'
 
 const Facilities = () => {
+    // Added some facilities 
     return (
         <div className='mt-4 facilities'>
             <h1>Facilities</h1>

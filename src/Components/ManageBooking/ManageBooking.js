@@ -5,16 +5,18 @@ import './ManageBooking.css'
 
 const ManageBooking = () => {
     const[allBooking,setAllBooking]=useState([]);
-    let btnRef = useRef();;
 
     useEffect(()=>{
+        // Getting all orders data 
         const uri=`https://serene-tor-03532.herokuapp.com/orders`
         axios.get(uri)
         .then(res=> setAllBooking(res.data))
     },[allBooking])
+    // Handling order delete 
     const handleDelete=id=>{
         const proceed=window.confirm('Are you sure to delete this booking?');
         if(proceed){
+            // axios delete method 
          const uri=`https://serene-tor-03532.herokuapp.com/orders/${id}`
          axios.delete(uri)
          .then(res=> 
@@ -27,6 +29,8 @@ const ManageBooking = () => {
              })
         }
      }
+
+    //  Updating status to Approved 
      const handleStatus=id=>{
          
         const uri=`https://serene-tor-03532.herokuapp.com/orders/${id}`;
@@ -44,6 +48,7 @@ const ManageBooking = () => {
     return (
         <div  className='container table-responsive manage-height'>
             <h1>Manage All Order</h1>
+            {/* A table for better presentation  */}
             <table class="table table-success table-striped"> 
            <thead>
                 <tr>
@@ -55,6 +60,7 @@ const ManageBooking = () => {
                 </tr>
             </thead>
             <tbody>
+    
                 {
                     allBooking.map(booking=> <ManageBookingTable booking={booking} handleDelete={handleDelete}  handleStatus={handleStatus}></ManageBookingTable>)
                 }

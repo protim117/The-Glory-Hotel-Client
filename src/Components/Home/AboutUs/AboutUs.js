@@ -1,10 +1,9 @@
 import React from 'react';
 import './AboutUs.css'
 const AboutUs = () => {
+    // About section 
     return (
         <div className="about-us">
-
-       
         <div className='container  '>
             <div className="row row-cols-lg-2 row-cols-1 gx-4 py-4">
             <div className="about-us-content col">

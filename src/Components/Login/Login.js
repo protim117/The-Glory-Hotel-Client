@@ -11,6 +11,7 @@ const Login = () => {
     const redirectedUrl= location?.state?.from.pathname || '/home';
     console.log(redirectedUrl);
     const handleSignIn=()=>{
+        // implementing google Sign in method 
         setIsLoading(true);
         googleSignIn()
         .then(()=>{
@@ -19,6 +20,7 @@ const Login = () => {
         })
         .finally(()=> setIsLoading(false))
     }
+    // A spinner for waiting a little bit 
     if(isLoading){
         return <div>
     <Button variant="success" disabled>

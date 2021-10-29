@@ -10,6 +10,7 @@ const Plans = () => {
 
     useEffect(()=>{
         setLoading(true);
+        // Getting all plans 
         const uri="https://serene-tor-03532.herokuapp.com/plans";
         axios.get(uri)
         .then(res => {

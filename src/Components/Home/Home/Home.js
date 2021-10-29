@@ -8,7 +8,7 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
-            {/* assembling every combonents */}
+            {/* assembling every components */}
             <Banner></Banner>
             <AboutUs></AboutUs>
             <Plans></Plans>

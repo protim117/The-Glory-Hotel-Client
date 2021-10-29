@@ -9,6 +9,7 @@ import './Header.css'
 const Header = () => {
     const{user,logOut}=useAuth();
     const history=useHistory();
+    // signout implementation 
   const signOut=()=>{
       logOut();
         history.push('/home');

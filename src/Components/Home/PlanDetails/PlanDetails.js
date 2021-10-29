@@ -12,6 +12,7 @@ const PlanDetails = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const history=useHistory();
     useEffect(()=>{
+        // searching for specific plan details 
         const uri=`https://serene-tor-03532.herokuapp.com/plans/${id}`
         axios.get(uri)
         .then(res=>setPlanDetails(res.data))
@@ -20,11 +21,11 @@ const PlanDetails = () => {
     const {title,description,img}=planDetails
 
     const onSubmit=data=>{
+        // Placing Booking with initial status pending 
         data.productId=id;
         data.email=user.email;
         data.name=user.displayName;
         data.status='Pending';
-        console.log(data);
         const uri="https://serene-tor-03532.herokuapp.com/orders";
         axios.post(uri,data)
         .then(res=> {
