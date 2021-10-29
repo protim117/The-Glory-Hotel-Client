@@ -10,8 +10,10 @@ const ManageBooking = () => {
         // Getting all orders data 
         const uri=`https://serene-tor-03532.herokuapp.com/orders`
         axios.get(uri)
-        .then(res=> setAllBooking(res.data))
-    },[allBooking])
+        .then(res=> {
+            setAllBooking(res.data);
+        })
+    },[])
     // Handling order delete 
     const handleDelete=id=>{
         const proceed=window.confirm('Are you sure to delete this booking?');
@@ -49,7 +51,7 @@ const ManageBooking = () => {
         <div  className='container table-responsive manage-height'>
             <h1>Manage All Order</h1>
             {/* A table for better presentation  */}
-            <table class="table table-success table-striped"> 
+            <table className="table table-success table-striped"> 
            <thead>
                 <tr>
                 <th scope="col">Booking ID</th>
@@ -62,7 +64,7 @@ const ManageBooking = () => {
             <tbody>
     
                 {
-                    allBooking.map(booking=> <ManageBookingTable booking={booking} handleDelete={handleDelete}  handleStatus={handleStatus}></ManageBookingTable>)
+                    allBooking.map(booking=> <ManageBookingTable key={booking._id} booking={booking} handleDelete={handleDelete}  handleStatus={handleStatus}></ManageBookingTable>)
                 }
             </tbody>
                 </table>

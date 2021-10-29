@@ -9,7 +9,7 @@ const Login = () => {
     const history=useHistory();
     const location=useLocation();
     const redirectedUrl= location?.state?.from.pathname || '/home';
-    console.log(redirectedUrl);
+    
     const handleSignIn=()=>{
         // implementing google Sign in method 
         setIsLoading(true);

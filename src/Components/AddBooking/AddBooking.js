@@ -22,15 +22,15 @@ const AddBooking = () => {
     <div className='w-50 mx-auto'>
             <form onSubmit={handleSubmit(onSubmit)}>
       {/* register your input into the hook by invoking the "register" function */}
-      <label class="form-label" >Title: </label>
-      <input  class="form-control" {...register("title")} />
-      <label class="form-label">Description: </label>
-      <input  class="form-control" {...register("description")}  />
+      <label className="form-label" >Title: </label>
+      <input  className="form-control" {...register("title")} />
+      <label className="form-label">Description: </label>
+      <input  className="form-control" {...register("description")}  />
       
       <div>
     {/* include validation with required or other standard HTML validation rules */}
-      <label class="form-label">Image Url: </label>
-      <input class="form-control" {...register("img", { required: true })} />
+      <label className="form-label">Image Url: </label>
+      <input className="form-control" {...register("img", { required: true })} />
       {/* errors will return when field validation fails  */}
       {errors.address && <span style={{color:'red'}}><b>This field is required</b></span>}
       </div>

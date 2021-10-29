@@ -21,9 +21,9 @@ const Footer = () => {
                     <h4>Connect With Us</h4>
                     <h5>SOCIAL MEDIA CHANNELS</h5>
                     <div className='social-icon fs-4'> 
-                    <i class="fab fa-facebook p-3"></i>
-                    <i class="fab fa-twitter p-3"></i>
-                    <i class="fab fa-instagram p-3"></i>
+                    <i className="fab fa-facebook p-3"></i>
+                    <i className="fab fa-twitter p-3"></i>
+                    <i className="fab fa-instagram p-3"></i>
                     </div>
                 </div>
             </div>

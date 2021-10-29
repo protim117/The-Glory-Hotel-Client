@@ -52,23 +52,23 @@ const PlanDetails = () => {
             <div className='w-50 mx-auto'>
             <form onSubmit={handleSubmit(onSubmit)}>
       {/* register your input into the hook by invoking the "register" function */}
-      <label class="form-label" >Name: </label>
-      <input defaultValue={user.displayName}  class="form-control" {...register("name")} disabled />
-      <label class="form-label">Email: </label>
-      <input defaultValue={user.email} class="form-control" {...register("email")} disabled />
+      <label className="form-label" >Name: </label>
+      <input defaultValue={user.displayName}  className="form-control" {...register("name")} disabled />
+      <label className="form-label">Email: </label>
+      <input defaultValue={user.email} className="form-control" {...register("email")} disabled />
       
       <div>
     {/* include validation with required or other standard HTML validation rules */}
-      <label class="form-label">Address: </label>
-      <input class="form-control" {...register("address", { required: true })} />
+      <label className="form-label">Address: </label>
+      <input className="form-control" {...register("address", { required: true })} />
       {/* errors will return when field validation fails  */}
       {errors.address && <span style={{color:'red'}}><b>This field is required</b></span>}
       </div>
 
      <div>
     {/* include validation with required or other standard HTML validation rules */}
-      <label class="form-label">City: </label>
-      <input class="form-control" {...register("city", { required: true })} />
+      <label className="form-label">City: </label>
+      <input className="form-control" {...register("city", { required: true })} />
       {/* errors will return when field validation fails  */}
       {errors.city && <span style={{color:'red'}}><b>This field is required</b></span>}
      </div>

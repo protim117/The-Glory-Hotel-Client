@@ -11,7 +11,7 @@ const ManageBookingTable = (props) => {
         <tr>
         <th scope="row">{productId}</th>
         <td>{name}</td>
-        <td>{status}</td>
+        <td>{status==='Approved'? <div><i class="fas fa-check-circle text-success fs-4 mt-2">{status}</i> </div> : <div><i class="fas fa-spinner text-info fs-4"></i> {status}</div>}</td>
         <td>
         <button className="btn btn-warning text-white"  disabled={double} onClick={()=>{handleStatus(_id); setDouble(true)}}>Approve</button>
         </td>

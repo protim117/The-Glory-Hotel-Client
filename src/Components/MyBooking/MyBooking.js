@@ -53,7 +53,7 @@ if(isLoading){
     return (
         <div className='container table-responsive manage-height'>
            <h1>All my order</h1>
-           <table class="table table-success table-striped"> 
+           <table className="table table-success table-striped"> 
            <thead>
                 <tr>
                 <th scope="col">Booking ID</th>
